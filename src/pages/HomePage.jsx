@@ -18,7 +18,7 @@ function HomePage(){
         }
     }
     useEffect(()=>{
-        fetchMovie('harry',"batman","avengers")
+        fetchMovie('harry',"batman","avengers","salman")
     },[])
     return (
         <>
