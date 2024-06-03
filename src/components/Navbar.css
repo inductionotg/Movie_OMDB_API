@@ -7,9 +7,11 @@
     background-color: var(--dull-blue);
     color:white
 }
-.navbar-logo{
+.navbar-logo > a{
     font-size: xx-large;
     letter-spacing: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar-wrapper div:nth-child(2){
@@ -35,6 +37,9 @@
     padding:10px;
     border-radius: 10px;
     margin-top: 2px;
+    max-height: 400px;
+    overflow-y: scroll;
+    box-shadow: 1px 1px;
 }
 .result-list > .autocomplete-result{
     font-size: large;

@@ -7,7 +7,7 @@ function MainRoutes(){
         <>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/movie/:name' element={<MovieDetails/>}/>
+                <Route path='/movie/:id' element={<MovieDetails/>}/>
                 <Route path="*" element={<ErrorPage/>}/>
             </Routes>
         </>

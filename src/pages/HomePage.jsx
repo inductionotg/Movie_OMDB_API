@@ -1,25 +1,9 @@
-import { useEffect, useState } from "react"
+
 import MovieCard from "../components/MovieCard"
-import {searchMovie} from '../apis/omdb'
-import axios from "axios"
+import useMovieList from "../hooks/useMovieList"
 import "./HomePage.css"
 function HomePage(){
-    const [moviedata,setMovieData] = useState([])
-    async function fetchMovie(...args){
-        const urls = args.map((name)=>searchMovie(name))
-        console.log("dsd",urls)
-        try {
-            const response = await axios.all(urls.map((url)=>axios.get(url)))
-            const responseMovies = response.map((movies)=>movies.data.Search)
-            console.log(responseMovies)
-            setMovieData([].concat(...responseMovies))
-        } catch (error) {
-            console.log("Error",error)
-        }
-    }
-    useEffect(()=>{
-        fetchMovie('harry',"batman","avengers","salman")
-    },[])
+    const{moviedata} = useMovieList("avengers","batman","cricket")
     return (
         <>
             <div className="movie-card-wrapper">
