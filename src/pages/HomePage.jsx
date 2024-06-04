@@ -9,7 +9,7 @@ function HomePage(){
             <div className="movie-card-wrapper">
                 {moviedata.length>0 && moviedata.map((movie)=>{
                     return (
-                        <MovieCard key={movie?.imdbID} {...movie}/>
+                        <MovieCard key={movie?.imdbID} id={movie.imdbID} {...movie}/>
                     )
                 })}
             </div>

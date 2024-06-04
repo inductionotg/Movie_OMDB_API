@@ -1,0 +1,28 @@
+.movie-details-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.movie-details{
+    color:white;
+    flex-basis: 65%;
+    font-size: x-large;
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+}
+.genre{
+    border:1px solid var(--dull-blue);
+    background-color: var(--dull-blue);
+    padding: 5px;
+    margin: 2px;
+    border-radius: 20%;
+
+}
+.actors{
+    font-weight: bold;
+    
+
+}
