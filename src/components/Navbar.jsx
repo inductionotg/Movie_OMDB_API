@@ -3,6 +3,9 @@ import './Navbar.css'
 import useMovieList from '../hooks/useMovieList'
 import {useDebounce} from '../apis/useDebounce.js'
 import {Link, useNavigate} from 'react-router-dom'
+import { FaSun,FaMoon } from "react-icons/fa";
+import { useContext } from 'react'
+import { ThemeContext } from '../context/theme-context.jsx'
 
 function Navbar(){
     const [isAutoCompleteVisible,setAutoCompleteVisible] = useState(false)
@@ -10,6 +13,8 @@ function Navbar(){
     const navigator = useNavigate()
 
     const {moviedata} = useMovieList(searchTerm)
+
+    const {theme,setTheme} = useContext(ThemeContext)
     function handleAutoComplete(e,imdbDB){
         console.log(e,imdbDB)
         navigator(`/movie/${imdbDB}`)
@@ -63,8 +68,8 @@ function Navbar(){
                     })}
                 </div>
             </div>
-            <div>
-                Theme
+            <div onClick={()=>setTheme((theme==='dark')?'light':'dark')}>
+                {theme==='dark'?<FaSun size={40} className="theme-icon" />:<FaMoon size={40} className="theme-icon"/>}
             </div>
 
         

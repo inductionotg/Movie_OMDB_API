@@ -1,9 +1,25 @@
-:root{
+
+[data-theme='dark']{
   --prime-blue:#00a0d6;
   --dull-blue:#354f65;
   --dark-blue:#191e26;
   --light-prime-grey:#32373e;
+  --card-background:whitesmoke;
+  --font-color:black;
+  --font-color-inverted:white;
 }
-body{
-  background-color: var(--dark-blue);
+[data-theme='light']{
+  --prime-blue:#00a0d6;
+  --dull-blue:#354f65;
+  --dark-blue:#ffffff;
+  --light-prime-grey:#e6ecf5;
+  --card-background:#364f65;
+  --font-color:black;
+  --font-color-inverted:black;
+}
+
+
+
+.app-wrapper{
+  background-color: var(--light-prime-grey);
 }
