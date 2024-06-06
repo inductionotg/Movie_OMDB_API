@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Movie Searching App
+## Developed a dynamic and responsive web application using React that allows users to search for movies, rate them, and enjoy a seamless autocomplete functionality. The app utilizes the OMDB API to fetch movie data and provides an interactive user experience with modern UI/UX design principles. Additionally, it features a dark and light theme switcher for enhanced user personalization.
